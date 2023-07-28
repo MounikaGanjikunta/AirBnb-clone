@@ -1,0 +1,100 @@
+nav{
+  height: 100px;
+  display: flex;
+  padding: 10px 10px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1); 
+
+}
+
+body{
+  margin: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.Photo{
+  display: flex;
+  flex-direction: column;
+}
+
+.Photo--image{
+  max-width: 400px;
+  align-self: center;
+}
+
+.Photo--header{
+  margin-bottom: 16px;
+  font-size: xx-large;
+}
+
+.Photo--text{
+  margin-top: 0;
+  font-size: x-large;
+}
+
+.gray{
+  color: grey;
+}
+
+.Card{
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  position: relative;
+} 
+
+/* .Card--image {
+  width: 80%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+} */
+
+.Card--image {
+  width: 200px;
+  height: 300px;
+  border-radius: 9px;
+  
+  
+  object-fit: cover; /* Optional, to control how the image is resized within the container */
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  overflow-x: auto;
+}
+
+.Card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
